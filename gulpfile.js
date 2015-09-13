@@ -33,6 +33,7 @@ gulp.task('sass', function(){
 gulp.task('watch', function(){
 	livereload.listen();
 	gulp.watch('src/**/*.jade', ['jade']);
+	gulp.watch('src/sass/**/*.scss', ['sass']);
 });
 
 gulp.task('default', ['jade','sass','watch']);

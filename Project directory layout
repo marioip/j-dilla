@@ -1,6 +1,10 @@
 # Project directory layout
 
 src/
+	assets/
+		fonts/
+		images/
+		videos/
 	css/
 	js/
 	sass/

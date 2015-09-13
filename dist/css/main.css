@@ -1,3 +1,7 @@
 /* line 1, stdin */
 body {
-  color: red; }
+  background-color: #fff; }
+
+/* line 5, stdin */
+h1 {
+  color: #000; }
