@@ -1,0 +1,37 @@
+body{
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	background-color: #fff;
+	color: $mainDark;
+}
+
+p{
+	font-size: 1em;
+}
+
+a{
+	color: $gold;
+	letter-spacing: 0.02em;
+	&:hover{
+		color: #7F230F;
+	}
+}
+
+h1, h3{
+	margin: 0;
+	padding: 0;
+}
+
+video{
+	width: 100%;
+	height: auto;
+}
+
+img {
+	max-width: 100%;
+ 	height: auto;
+}
+
+figure{
+	margin: 0;
+}
