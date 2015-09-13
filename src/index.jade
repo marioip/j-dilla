@@ -15,37 +15,43 @@ html(lang='en')
 	body
 
 		header
-			h1 J Dilla
-			h3 James Dewitt Yancey
-			time(datetime='1974-02-07') February 7, 1974 - 
-			time(datetime='2006-02-10') February 10, 2006
+			div.row
+				div.col-12
+					h1 J Dilla
+					h3 James Dewitt Yancey
+					time(datetime='1974-02-07') February 7, 1974 - 
+					time(datetime='2006-02-10') February 10, 2006
 
 		main
-			article
-				p JamesDewitt Yancey, better known by the stage names J Dilla and Jay Dee, was an American record producer who emerged from the mid-1990s underground hip-hop scene in Detroit, Michigan. According to his obituary at NPR.org, he 'was one of the music industry's most influential hip-hop artists, working for big-name acts including A Tribe Called Quest, De La Soul, Busta Rhymes, The Pharcyde and Common.' Yancey died in 2006 of the blood disease Thrombotic thrombocytopenic purpura.
-				a(alt='J Dilla on Wikipedia' name='J Dilla on Wikipedia' href='https://en.wikipedia.org/wiki/J_Dilla' target='_blank') J Dilla on Wikipedia
+			div.row
+				div.col-12
+					article
+						p JamesDewitt Yancey, better known by the stage names J Dilla and Jay Dee, was an American record producer who emerged from the mid-1990s underground hip-hop scene in Detroit, Michigan. According to his obituary at NPR.org, he 'was one of the music industry's most influential hip-hop artists, working for big-name acts including A Tribe Called Quest, De La Soul, Busta Rhymes, The Pharcyde and Common.' Yancey died in 2006 of the blood disease Thrombotic thrombocytopenic purpura.
+						a(alt='J Dilla on Wikipedia' name='J Dilla on Wikipedia' href='https://en.wikipedia.org/wiki/J_Dilla' target='_blank') J Dilla on Wikipedia
+			div.row
+				video(controls)
+					source(src="assets/videos/JDilla_LastDonutOfTheNight.mp4" type="video/mp4")
+					source(src="assets/videos/JDilla_LastDonutOfTheNight.ogg" type="video/ogg")
+					Your browser does not support the video tag.
 
-			video(controls)
-				source(src="assets/videos/JDilla_LastDonutOfTheNight.mp4" type="video/mp4")
-				source(src="assets/videos/JDilla_LastDonutOfTheNight.ogg" type="video/ogg")
-				Your browser does not support the video tag.
-
-			div.mentions
-				div.m-item
-					figure
-						img(src='assets/images/questlove_big.jpg')
-						figcaption Questlove
-					p "If you were to secretly ask the most praised hip-hop producers, if given a top three, who they fear the most, Dilla’s name would chart on everyone’s list, hands down."
-				div.m-item
-					figure
-						img(src='assets/images/peterock_big.jpg')
-						figcaption Pete Rock
-					p "He was one of the greatest, man. He was the greatest to ever do it, for the new cats. And for his mother to tell me that I was his favorite producer – I was like ‘Wow, that’s dope, man."
-				div.m-item
-					figure
-						img(src='assets/images/blackthought_big.jpg')
-						figcaption Black Thought
-					p "I can't begin to explain the influence his mind and ear has had on my band, myself, and the careers of so many other artists. The most humble, modest, worthy and gifted beatmaker I've known..."
+			div.row
+				div.mentions.col-12
+					div.m-item.col-4
+						figure
+							img(src='assets/images/questlove_big.jpg')
+							figcaption Questlove
+						p "If you were to secretly ask the most praised hip-hop producers, if given a top three, who they fear the most, Dilla’s name would chart on everyone’s list, hands down."
+					div.m-item.col-4
+						figure
+							img(src='assets/images/peterock_big.jpg')
+							figcaption Pete Rock
+						p "He was one of the greatest, man. He was the greatest to ever do it, for the new cats. And for his mother to tell me that I was his favorite producer – I was like ‘Wow, that’s dope, man."
+					div.m-item.col-4
+						figure
+							img(src='assets/images/blackthought_big.jpg')
+							figcaption Black Thought
+						p "I can't begin to explain the influence his mind and ear has had on my band, myself, and the careers of so many other artists. The most humble, modest, worthy and gifted beatmaker I've known..."
 
 		footer
-			p This is a web page about J Dilla
+			div.row
+				p This is a web page about J Dilla

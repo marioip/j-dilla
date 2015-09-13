@@ -434,3 +434,70 @@ img {
 /* line 35, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
 figure {
   margin: 0; }
+
+/* Responsive layout */
+/* 12 columns / 8.33 */
+/* line 5, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.row:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+/* line 11, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.col-1 {
+  width: 8.33%; }
+
+/* line 12, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.col-2 {
+  width: 16.66%; }
+
+/* line 13, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.col-3 {
+  width: 25%; }
+
+/* line 14, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.col-4 {
+  width: 33.33%; }
+
+/* line 15, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.col-5 {
+  width: 41.66%; }
+
+/* line 16, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.col-6 {
+  width: 50%; }
+
+/* line 17, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.col-7 {
+  width: 58.33%; }
+
+/* line 18, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.col-8 {
+  width: 66.66%; }
+
+/* line 19, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.col-9 {
+  width: 75%; }
+
+/* line 20, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.col-10 {
+  width: 83.33%; }
+
+/* line 21, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.col-11 {
+  width: 91.66%; }
+
+/* line 22, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.col-12 {
+  width: 100%; }
+
+/* line 24, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+[class*="col-"] {
+  float: left;
+  padding: 15px; }
+
+/* Larger than mobile */
+/* Larger than phablet (also point when grid becomes active) */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
