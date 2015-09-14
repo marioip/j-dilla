@@ -81,3 +81,14 @@
 		}
 	}
 }
+
+.video{
+	background-color: $mainDark;
+	@include box-shadow(2px, 2px, 4px, rgba(0, 0, 0, 0.5));
+}
+
+.wiki{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 4em;
+}

@@ -624,3 +624,16 @@ figure {
     #main a.btn:hover {
       color: #fff;
       box-shadow: none; }
+
+/* line 85, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+.video {
+  background-color: #000;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+
+/* line 90, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+.wiki {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4em; }
