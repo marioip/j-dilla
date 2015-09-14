@@ -397,41 +397,48 @@ td,
 th {
   padding: 0; }
 
-/* line 1, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
+/* line 2, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   background-color: #fff;
   color: #000; }
 
-/* line 8, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
+/* line 9, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
 p {
-  font-size: 1em; }
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.4em;
+  letter-spacing: 0.03em; }
 
-/* line 12, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
+/* line 16, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 20, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
 a {
   color: #A27B29;
   letter-spacing: 0.02em; }
-  /* line 15, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
+  /* line 23, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
   a:hover {
     color: #7F230F; }
 
-/* line 20, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
+/* line 28, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
 h1, h3 {
   margin: 0;
   padding: 0; }
 
-/* line 25, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
+/* line 33, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
 video {
   width: 100%;
   height: auto; }
 
-/* line 30, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
+/* line 38, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 35, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
+/* line 43, /Users/marioip/sites/job-tests/j-dilla/src/sass/_base.scss */
 figure {
   margin: 0; }
 
@@ -493,28 +500,40 @@ figure {
   width: 100%; }
 
 /* line 25, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+.small-4 {
+  width: 100%; }
+
+/* line 27, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
 [class*="col-"] {
+  float: left;
+  padding: 15px; }
+
+/* line 32, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+[class*="small-"] {
   float: left;
   padding: 15px; }
 
 /* Larger than mobile */
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-  /* line 37, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+  /* line 44, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
   .container {
     width: 90%;
     margin-left: 5%; } }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-  /* line 45, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+  /* line 52, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
   .container {
     width: 80%;
-    margin-left: 10%; } }
+    margin-left: 10%; }
+  /* line 56, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+  .small-4 {
+    width: 33%; } }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  /* line 53, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
+  /* line 63, /Users/marioip/sites/job-tests/j-dilla/src/sass/_layout.scss */
   .container {
     width: 70%;
     margin-left: 15%; } }
@@ -523,7 +542,7 @@ figure {
 /* HEADER */
 /* line 2, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
 #header {
-  background: #000 url("../assets/images/dillaBlack.jpg") top no-repeat;
+  background: #000 url("../assets/assets/images/dillaBlack.jpg") top no-repeat;
   background-position: 70% 10%;
   color: #fff; }
   /* line 6, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
@@ -550,3 +569,58 @@ figure {
     color: #dedede;
     font-size: 0.8em;
     font-style: italic; }
+
+/* HEADER */
+/* line 33, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+#header {
+  background: #000 url("../assets/images/dillaBlack.jpg") top no-repeat;
+  background-position: 70% 10%;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff; }
+  /* line 38, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+  #header h1 {
+    font-family: diploma;
+    letter-spacing: 0.06em;
+    font-size: 4em;
+    font-weight: lighter; }
+
+/* line 46, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+.h-texts {
+  padding: 15em 0; }
+  /* line 48, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+  .h-texts h1 {
+    padding-bottom: 0.4em; }
+  /* line 51, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+  .h-texts h3 {
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-size: 1.2em;
+    padding-bottom: 0.2em; }
+  /* line 57, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+  .h-texts time {
+    color: #dedede;
+    font-size: 0.8em;
+    font-style: italic; }
+
+/* MAIN */
+/* line 65, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+#main {
+  text-align: center; }
+  /* line 67, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+  #main article p {
+    padding: 3em 0 2em 0;
+    line-height: 1.6em; }
+  /* line 71, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+  #main a.btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #A27B29;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #999; }
+    /* line 78, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+    #main a.btn:hover {
+      color: #fff;
+      box-shadow: none; }

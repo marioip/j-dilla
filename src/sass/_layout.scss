@@ -22,7 +22,14 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+.small-4 {width: 100%;}
+
 [class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+[class*="small-"]{
     float: left;
     padding: 15px;
 }
@@ -46,6 +53,9 @@
 		width: 80%;
 		margin-left: 10%;
 	}
+	.small-4{
+		width: 33%;
+	}
 }
 
 /* Larger than desktop */
@@ -58,3 +68,4 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+

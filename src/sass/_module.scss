@@ -1,6 +1,6 @@
 /* HEADER */
 #header{
-	background: $mainDark url('../assets/images/dillaBlack.jpg') top no-repeat;
+	background: $mainDark url('../assets/assets/images/dillaBlack.jpg') top no-repeat;
 	background-position: 70% 10%;
 	color: $mainLight;
 	h1{
@@ -26,5 +26,58 @@
 		color: $secondLight;
 		font-size: 0.8em;
 		font-style: italic;
+	}
+}
+
+/* HEADER */
+#header{
+	background: $mainDark url('../assets/images/dillaBlack.jpg') top no-repeat;
+	background-position: 70% 10%;
+	@include box-shadow(2px, 2px, 4px, rgba(0, 0, 0, 0.5));
+	color: $mainLight;
+	h1{
+		font-family: diploma;
+		letter-spacing: 0.06em;
+		font-size: 4em;
+		font-weight: lighter;
+	}
+}
+
+.h-texts{
+	padding: 15em 0;
+	h1{
+		padding-bottom: 0.4em;
+	}
+	h3{
+		font-weight: 400;
+		letter-spacing: 0.05em;
+		font-size: 1.2em;
+		padding-bottom: 0.2em;
+	}
+	time{
+		color: $secondLight;
+		font-size: 0.8em;
+		font-style: italic;
+	}
+}
+
+/* MAIN */
+#main{
+	text-align: center;
+	article p{
+		padding: 3em 0 2em 0;
+		line-height: 1.6em;
+	}
+	a.btn{
+		color: $mainLight;
+		text-decoration: none;
+		padding: 10px 20px;
+		background-color: $gold;
+		border-radius: 5px;
+		box-shadow: 1px 1px 4px #999;
+		&:hover{
+			color: $mainLight;
+			box-shadow: none;
+		}
 	}
 }
