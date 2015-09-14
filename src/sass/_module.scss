@@ -44,7 +44,7 @@
 }
 
 .h-texts{
-	padding: 15em 0;
+	padding: 15em 2em;
 	h1{
 		padding-bottom: 0.4em;
 	}
@@ -58,6 +58,13 @@
 		color: $secondLight;
 		font-size: 0.8em;
 		font-style: italic;
+	}
+}
+
+// add background in mobile - let reading header
+@media (max-width: 750px) {
+	.h-texts{
+		background-color: rgba(0,0,0,0.6);
 	}
 }
 

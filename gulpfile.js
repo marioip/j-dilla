@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	browserify = require('gulp-browserify'),
 	gulpif = require('gulp-if'),
+	concat = require('gulp-concat'),
 	sass = require('gulp-sass');
 
 var env = process.env.NODE_ENV || 'development';
@@ -33,8 +34,15 @@ gulp.task('sass', function(){
 		.pipe(livereload());
 });
 
+gulp.task('js-libraries',function(){
+    return gulp.src('node_modules/angular/angular.js')
+        .pipe(gulpif(env === 'production', uglify()))
+        .pipe(gulp.dest(outputDir + '/js'))
+});
+
 gulp.task('js', function(){
-	return gulp.src('src/js/main.js')
+	return gulp.src(['src/js/main-angular.js','src/js/main.js'])
+		.pipe(concat('main.js'))
 		.pipe(browserify({ debug: env === 'development' }))
 		.pipe(gulpif(env === 'production', uglify()))
 		.pipe(gulp.dest(outputDir+'/js'))

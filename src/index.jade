@@ -1,6 +1,6 @@
 doctype html
 
-html(lang='en')
+html(lang='en' ng-app="jDillaApp")
 
 	head
 		meta(charset='utf-8')
@@ -8,11 +8,11 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		meta(name='autor', content='Mario Iglesias - @marioip')
 
-		title J Dilla
+		title J Dilla - Tribute of James Dewitt Yancey
 
 		link(rel='stylesheet', href='css/main.css')
 
-	body
+	body(ng-controller="JDillaController")
 
 		header#header
 			div.container
@@ -37,26 +37,20 @@ html(lang='en')
 						source(src="assets/videos/JDilla_LastDonutOfTheNight.ogg" type="video/ogg")
 						Your browser does not support the video tag.
 			
+			//- angular injection object
 			div.container.mentions
-					div.m-item.small-4
+					div.m-item.small-4(ng-repeat="mention in mentions")
 						figure
-							img(src='assets/images/questlove_big.jpg')
-							figcaption Questlove
-						p "If you were to secretly ask the most praised hip-hop producers, if given a top three, who they fear the most, Dilla’s name would chart on everyone’s list, hands down."
-					div.m-item.small-4
-						figure
-							img(src='assets/images/peterock_big.jpg')
-							figcaption Pete Rock
-						p "He was one of the greatest, man. He was the greatest to ever do it, for the new cats. And for his mother to tell me that I was his favorite producer – I was like ‘Wow, that’s dope, man."
-					div.m-item.small-4
-						figure
-							img(src='assets/images/blackthought_big.jpg')
-							figcaption Black Thought
-						p "I can't begin to explain the influence his mind and ear has had on my band, myself, and the careers of so many other artists. The most humble, modest, worthy and gifted beatmaker I've known..."
+							img(src='{{mention.image}}')
+							figcaption {{mention.name}}
+						p {{mention.mention}}
 					
 
 		footer#footer
 			div.row
 				p.col-12 This is a website tribute of &nbsp;<span class="jDila-footer">J Dilla</span>
 
+		script(type="text/javascript", src="js/angular.js")
+
 		script(type="text/javascript", src="js/main.js")
+		
