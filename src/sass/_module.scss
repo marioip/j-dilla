@@ -92,3 +92,53 @@
 	text-align: center;
 	margin-bottom: 4em;
 }
+
+// mentions - items
+.mentions{
+	padding: 5em 0;
+
+	.m-item{
+		padding: 0 10px;
+		figcaption{
+			margin: 10px 0;
+			color: $gold;
+		}
+		p{
+			padding: 0 5%;
+			padding-top: 10px;
+			font-size: 0.9em;
+		}
+		a{
+			vertical-align: text-bottom;
+		}
+	}
+}
+
+@media (min-width: 400px) {
+	.mentions .m-item{
+		margin-bottom: 5%;
+	}
+}
+
+@media (min-width: 750px) {
+	.mentions .m-item{
+		
+	}
+}
+
+/* FOOTER */
+#footer{
+	background-color: $mainDark;
+	color: $mainLight;
+	p{
+		font-weight: 300;
+		text-align: center;
+	}
+}
+
+.jDila-footer{
+	font-family: diploma;
+	font-weight: lighter;
+	font-size: 1.2em;
+	padding-right: 10px;
+}

@@ -637,3 +637,44 @@ figure {
   width: 100%;
   text-align: center;
   margin-bottom: 4em; }
+
+/* line 97, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+.mentions {
+  padding: 5em 0; }
+  /* line 100, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+  .mentions .m-item {
+    padding: 0 10px; }
+    /* line 102, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+    .mentions .m-item figcaption {
+      margin: 10px 0;
+      color: #A27B29; }
+    /* line 106, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+    .mentions .m-item p {
+      padding: 0 5%;
+      padding-top: 10px;
+      font-size: 0.9em; }
+    /* line 111, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+    .mentions .m-item a {
+      vertical-align: text-bottom; }
+
+@media (min-width: 400px) {
+  /* line 118, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+  .mentions .m-item {
+    margin-bottom: 5%; } }
+
+/* FOOTER */
+/* line 130, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+#footer {
+  background-color: #000;
+  color: #fff; }
+  /* line 133, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+  #footer p {
+    font-weight: 300;
+    text-align: center; }
+
+/* line 139, /Users/marioip/sites/job-tests/j-dilla/src/sass/_module.scss */
+.jDila-footer {
+  font-family: diploma;
+  font-weight: lighter;
+  font-size: 1.2em;
+  padding-right: 10px; }
