@@ -6,9 +6,11 @@ This is a responsive website tribute of J Dilla created by @marioip
 ## Technologies used
 
 - Html5
+- Jade
 - CSS3
 - Sass
 - Smacss
+
 - Javascript
 - AngularJS
 
